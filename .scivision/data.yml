@@ -1,0 +1,10 @@
+sources:
+  pollen:
+      description: Labelled pollen grain images indicating species with 800 examples
+      origin:
+      driver: intake_xarray.image.ImageSource
+      args:
+        urlpath: ["https://zenodo.org/record/7113865/files/PollenData.zip"]
+        chunks: {}
+        storage_options: {'anon': True}
+        exif_tags: True
